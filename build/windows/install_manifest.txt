@@ -4,7 +4,15 @@ C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_
 C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
 C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/images/m1.jpg
+C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/images/m2.png
+C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/images/m3.jpg
+C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/images/m4.jpg
+C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/images/m5.png
+C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/images/m6.jpg
+C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/images/m7.png
 C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/NOTICES
 C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
 C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
 C:/Users/gaming/StudioProjects/untitled/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

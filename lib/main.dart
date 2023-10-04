@@ -18,13 +18,13 @@ class MyApp extends StatelessWidget {
             title: const Text("Rate my friends",style: TextStyle(fontSize: 40,color: Color(0xffECB365)),)) ,
         body: ListView(
           children: [
-            const Student(200301,'Karam','images/m1.jpg',72),
-            const Student(200302,'Hussam Burqan','images/m2.png',50),
-            const Student(200304,'Mohammad -Toxic- ','images/m3.jpg',90),
-            const Student(200303,'Omar King of the North','images/m4.jpg',78),
-            const Student(220306,'Hatem -Hunter-','images/m5.png',110), // hack
-            const Student(200407,'Ayed -NoTe-','images/m6.jpg',51),
-            const Student(200408,'Omar -Gh0st-','images/m7.png',61),
+            const Student(200301,'Karam','images/m1.jpg',72,'CS'),
+            const Student(200302,'Hussam Burqan','images/m2.png',50,'CS'),
+            const Student(200304,'Mohammad -Toxic- ','images/m3.jpg',90,'CS'),
+            const Student(200303,'Omar King of the North','images/m4.jpg',78,'CSE'),
+            const Student(220306,'Hatem -Hunter-','images/m5.png',110,'CS'), // hack
+            const Student(200407,'Ayed -NoTe-','images/m6.jpg',51,'CSE'),
+            const Student(200408,'Omar -Gh0st-','images/m7.png',61,'CS'),
             Container(
                 padding: const EdgeInsets.all(2),
                 height: 70,
@@ -51,8 +51,9 @@ class Student extends StatelessWidget {
   final String name;
   final String image;
   final double mark;
+  final String major ;
 
-  const Student(this.id, this.name, this.image, this.mark, {Key? key})
+  const Student(this.id, this.name, this.image, this.mark,this.major, {Key? key})
       : super(key: key);
 
   String cl() {
@@ -84,7 +85,7 @@ class Student extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Container(
       padding: const EdgeInsets.all(2),
-      height: 120,
+      height: 140,
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
         color: const Color(0xff064663),
@@ -95,7 +96,7 @@ class Student extends StatelessWidget {
                 topLeft: Radius.circular(40),
                 bottomLeft: Radius.circular(40)),
                 child: SizedBox.fromSize(
-                  size: const Size.fromRadius(55),
+                  size: const Size.fromRadius(65),
                   child: Image.asset(image, fit: BoxFit.cover),)),
             Expanded(
                 child: Container(
@@ -104,11 +105,11 @@ class Student extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Text(id.toString(),style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Color(0xffECB365)),),
-                      Text(name,style: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Color(0xffECB365)),),
-                      //Text(mark.toString(),style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Color(0xffECB365)),),
+                      Text(name,style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Color(0xffECB365)),),
+                      Text(major,style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Color(0xffECB365)),),
                       Align(
                         alignment: Alignment.centerRight,
-                        child:Text(cl(),style: const TextStyle(fontSize: 30 ,color: Color(0xffECB365) ),)
+                        child:Text(cl(),style: const TextStyle(fontSize: 27 ,color: Color(0xffECB365) ),)
                       )
 
                     ],
