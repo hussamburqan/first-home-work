@@ -19,12 +19,12 @@ class MyApp extends StatelessWidget {
         body: ListView(
           children: [
             const Student(200301,'Karam','images/m1.jpg',72),
-            const Student(200302,'Hussam Burqan','images/m2.png',19),
-            const Student(200304,'Mohammad -Toxic- ','images/m3.jpg',89),
+            const Student(200302,'Hussam Burqan','images/m2.png',50),
+            const Student(200304,'Mohammad -Toxic- ','images/m3.jpg',90),
             const Student(200303,'Omar King of the North','images/m4.jpg',78),
             const Student(220306,'Hatem -Hunter-','images/m5.png',110), // hack
-            const Student(200407,'Ayed -NoTe-','images/m6.jpg',22),
-            const Student(200408,'Omar -Gh0st-','images/m7.png',55),
+            const Student(200407,'Ayed -NoTe-','images/m6.jpg',51),
+            const Student(200408,'Omar -Gh0st-','images/m7.png',61),
             Container(
                 padding: const EdgeInsets.all(2),
                 height: 70,
@@ -51,26 +51,34 @@ class Student extends StatelessWidget {
   final String name;
   final String image;
   final double mark;
-  const Student(this.id , this.name ,this.image,this.mark,{Key? key}): super(key:key);
 
-  String cl(){
-     double x;
-     int z=0 ;
-     x = mark/2;
+  const Student(this.id, this.name, this.image, this.mark, {Key? key})
+      : super(key: key);
 
-  while (x-10>=0){
-    z++;
-    x=x-10;
+  String cl() {
+    if (mark > 90 && mark < 110) // hack
+    {
+      return '***** ';
+    } else if (mark > 80)
+    {
+      return '**** ';
+    } else if (mark > 70)
+    {
+      return '*** ';
+    } else if (mark > 60)
+    {
+      return '** ';
+    }
+    else if (mark > 50)
+    {
+      return '*  ';
+    }else if (mark >=50)
+    {
+      return ':(  ';
+    }
+    return ':(  ';
   }
-     switch(z){
-       case 1 : return '* ';
-       case 2 : return '** ';
-       case 3 : return '*** ';
-       case 4 : return '**** ';
-       case 5 : return '***** ';
-       default: return ':(  ';
-     }
-  }
+
 
   @override
   Widget build(BuildContext context) {
