@@ -56,7 +56,7 @@ class Student extends StatelessWidget {
       : super(key: key);
 
   String cl() {
-    if (mark > 90 && mark < 110) // hack
+    if (mark > 90 && mark <= 110) // hack
     {
       return '***** ';
     } else if (mark > 80)
@@ -90,7 +90,8 @@ class Student extends StatelessWidget {
         color: const Color(0xff064663),
         child: Row(
           children: [
-            ClipRRect( borderRadius: const BorderRadius.only(
+            ClipRRect(
+                borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(40),
                 bottomLeft: Radius.circular(40)),
                 child: SizedBox.fromSize(
